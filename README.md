@@ -58,6 +58,27 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 The joystick icon is from the Tango icon set and is public domain.
 
 # Building
+For day-to-day local development, use the root `Makefile`:
+
+```bash
+make build
+make run
+```
+
+Useful aliases:
+
+```bash
+make open
+make release
+make clean
+```
+
+If `xcodebuild` says you have not agreed to the Xcode license yet, run:
+
+```bash
+sudo xcodebuild -license
+```
+
 If you just want to get a binary of the architecture of your current computer, just run Product > Build in Xcode. However, if you want a universal binary for distribution on other websites, here's how:
 1. Clone and `cd` into the repo
 2. Run `xcodebuild -project Enjoyable.xcodeproj -scheme Enjoyable -configuration Release -arch arm64 -derivedDataPath ./build build` and copy the resulting app bundle to another location, such as the Downloads folder. You'll need it later.
