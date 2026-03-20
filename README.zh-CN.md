@@ -75,18 +75,12 @@ open ~/Applications/Enjoyable.app
 ```
 
 ### 方式 2：手动安装
-
-先构建：
+会自动构建并且安装到 `~/Applications`。
 
 ```bash
-make build
+make install 
 ```
 
-然后把下面这个 `.app` 拖到 `Applications` 或 `~/Applications`：
-
-```text
-build/Build/Products/Debug/Enjoyable.app
-```
 
 ## 无法打开应用
 
