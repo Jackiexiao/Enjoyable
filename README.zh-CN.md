@@ -54,32 +54,18 @@ sudo xcodebuild -license
 
 ## 安装到自己的电脑
 
-### 方式 1：命令行安装
-
-构建并安装到当前用户的 `~/Applications`：
-
-```bash
-make install
-```
-
-如果你想安装 Release 版本：
-
-```bash
-make install-release
-```
-
-安装完成后，你可以直接打开：
-
-```bash
-open ~/Applications/Enjoyable.app
-```
-
-### 方式 2：手动安装
-会自动构建并且安装到 `~/Applications`。
+git clone https://github.com/jackiexiao/Enjoyable.git
+cd Enjoyable
 
 ```bash
 make install 
 ```
+
+然后打开 `Enjoyable.app`。
+
+连接上你的控制器，Enjoyable 就会自动识别并开始映射。
+
+自己调整键位映射，然后 电脑顶部的 status bar 点击 游戏手柄 🎮 , 改为 enable 就好了
 
 
 ## 无法打开应用
